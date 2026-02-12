@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("img/bak11.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.496);
+    color: white;
+}
+nav {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 6px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: rgb(139, 169, 226);
+}
+button:hover{
+     background-color: rgb(33, 89, 202);
+     transition: 0.5s;
+}
+img{
+    transition: transform 0.3s ease; /* animação suave */
+
+}
+img:hover{
+    transform:scale( 1.1);
+}
+.pa{
+    display: flex;
+    justify-content: center;
+    
+}
+p{
+    width:700px;
+}
+main{
+    text-align: center;
+}
+.evolu{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+#gif{
+    display: none;
+}
+
