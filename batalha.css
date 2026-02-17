@@ -44,18 +44,15 @@ main{
     top: 200px;
 }
 .ataques{
-    width: 400px;
-    display:flex;
-    justify-content: end ;
-    align-items: end;
-   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  
+    place-items: center; 
+
 }
 .ataques button{
     height: 30px;
     width: 100px;
 }
 
-.golpes{
-    width: 100px;
-    height: 80px;
-}
