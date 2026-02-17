@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha Pokemón</title>
+    <link rel="stylesheet" href="batalha.css">
+</head>
+<body>
+    <main>
+        <section id="um">
+            <div class="playerUm">
+                <h1 class="vida" id="hp">100</h1>
+                <h2 id="pokemon"></h2>
+                <img id="poke-joga" src="" alt="">
+            </div>
+        </section>
+        <section id="dois">
+            <div class="cpu">
+                <h1 class="vida" id="hp-cpu">100</h1>
+                <h2 id="poke-adver">Squirtle</h2>
+                <img id="poke-cpu" class="pokemons-luta" src="img/squirtle-adversario-removebg-preview.png" alt="">
+            </div>
+        </section>
+        
+        <div class="ataques">            
+            <h2 id="mensagem">...</h2>
+            <button id="ataque">Atacar</button>
+            </div>
+
+            <div id="ataquesPokemon">
+                <button class="golpes">Ember</button>
+                <button class="golpes">Metal claw</button>
+                <button class="golpes">-</button>
+                <button class="golpes">-</button>
+            </div>
+    </main>
+
+    <script src="batalha.js"></script>
+</body>
+</html>

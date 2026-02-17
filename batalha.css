@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    border-radius: 20px;
+    width: 1000px;
+    height: 500px;
+    background-image: url(img/poke-batalhja.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+
+}
+#dois{
+    position: relative;
+    left: 600px;
+}
+.pokemons-luta{
+
+    height: 200px;
+    width: 200px;
+}
+
+.vida{
+    height: 40px;
+    width: 200px;
+    background-color: green;
+
+
+}
+#um{
+    position: relative;
+    top: 200px;
+}
+.ataques{
+    width: 400px;
+    display:flex;
+    justify-content: end ;
+    align-items: end;
+   
+}
+.ataques button{
+    height: 30px;
+    width: 100px;
+}
+
+.golpes{
+    width: 100px;
+    height: 80px;
+}
