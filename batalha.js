@@ -6,7 +6,10 @@ let pokemon = document.getElementById("pokemon")
 let pokeAdver = document.getElementById("poke-adver")
 let pokemonEscolhido = localStorage.getItem("pokemonEscolhido")
 let atacar = document.getElementById("ataque")
-
+let grade = document.getElementById("ataques")
+let opcoes = document.getElementById("opcoes")
+let voltar = document.getElementById("voltar")
+let turno = "player"; 
 
 if (pokemonEscolhido === "Charmander") {
     pokemon.innerText = "Charmander"
@@ -27,6 +30,14 @@ else{
     imgJogador.style.height = "200px"
 }
 
-atacar.addEventListener("click", ()=> {
 
+
+atacar.addEventListener("click", ()=>{
+    
+    grade.style.display = "none"
+    opcoes.style.display = "grid"
+})
+voltar.addEventListener("click", ()=>{
+    opcoes.style.display = "none"
+    grade.style.display = "grid"
 })

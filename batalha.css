@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color:#74bfea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,12 +19,15 @@ main{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    display: flex;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
 
 }
 #dois{
-    position: relative;
-    left: 600px;
+    justify-self: end;   /* joga pra direita */
+    align-self: start;  
 }
 .pokemons-luta{
 
@@ -40,19 +43,31 @@ main{
 
 }
 #um{
-    position: relative;
-    top: 200px;
+    justify-self: start; /* esquerda */
+    align-self: end;   
 }
-.ataques{
+#ataques{
+    grid-column: 1 / 3;
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  
-    place-items: center; 
-
+    gap: 5px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
 }
-.ataques button{
+#ataques button{
     height: 30px;
-    width: 100px;
 }
 
+#opcoes{
+    grid-column: 1 / 3;
+    
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+}
+#opcoes button{
+    height: 30px;
+}
