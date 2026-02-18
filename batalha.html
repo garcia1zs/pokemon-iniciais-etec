@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batalha Pokemón</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
     <link rel="stylesheet" href="batalha.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <abbr title="Voltar"><a href="index.html"><span class="material-symbols-outlined">arrow_back</span></a></abbr>
+        </nav>
+    </header>
     <main>
         <section id="um">
             <div class="playerUm">
@@ -31,12 +37,18 @@
             <button>Sair</button>
         </div>
         <div id="opcoes">
-            <button>Ember</button>
-            <button>Metal claw</button>
+            <button id="ataqueUm" onclick="ataqueJogador(10)"></button>
+            <button id="ataqueDois" onclick="ataqueJogador(30)"></button>
             <button>-</button>
             <button id="voltar">Voltar</button>
         </div>
-
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p id="modal-texto">Você Ganhou!!Quer batalhar denovo?</p>
+                <button id="btnSim">Sim</button>
+                <button id="btnNao">Não</button>
+            </div>
+        </div>
     </main>
 
     <script src="batalha.js"></script>

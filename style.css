@@ -15,7 +15,7 @@ body{
     background-color: rgba(0, 0, 0, 0.496);
     color: white;
 }
-nav {
+nav{
     padding: 20px;
     gap: 20px;
     display: flex;
